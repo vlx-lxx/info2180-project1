@@ -1,11 +1,339 @@
-/* Add your CSS to this file */
+/* Javon Laing - Info2180 Project 1 #CSS  */
+
 body {
-    margin: 0;
-    font-size: 16px;
+  margin: 0;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  /* The default font family for the landing page */
+  font-size: 18px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: white;
+}
+
+header h1 {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 18px;
+  position: relative;
+  left: 1cm;
+}
+
+header a {
+  color: #6b7280;
+  font-size: 18px;
+  text-decoration: none;
+  /* Removing underline from links, if desired */
+}
+
+header a:hover {
+  color: #5a67d8;
+}
+
+.section.overview-hero {
+  background-color: #e2e8f0;
+}
+
+
+.testing {
+  background-color: #4a5568;
+  color: white;
+}
+
+.testing a.learn-more {
+  background-color: #48bb78;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.stories h2,
+a {
+  color: #5a67d8;
+}
+
+.stories h3 {
+  font-size: 18px;
+}
+
+.section.stories img {
+  border-radius: 50%;
+}
+
+.section.newsletter {
+  background-color: #48bb78;
+  color: white;
+}
+
+.section.newsletter.btn {
+  background-color: #5a67d8;
+}
+
+footer {
+  background-color: #4a5568;
+  color: white;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px;
+}
+
+li a:link {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.overview-hero {
+  position: relative;
+  background-color: #e2e8f0;
+  display: flex;
+  padding: 20px;
+}
+
+.overview-hero-text {
+  text-align: start;
+  padding: 20px;
+}
+
+.overview-hero h2 {
+  font-size: 24px;
+  color: #48bb78;
+}
+
+.overview-hero div {
+  padding: 10px;
+  padding-left: 60px;
+}
+
+.overview-hero img {
+  width: 180px;
+  height: 180px;
+}
+
+.learn-about {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+}
+
+.learn-about h2 {
+  color: #48bb78;
+  font-size: 24px;
+  margin-bottom: 575px;
+  white-space: nowrap;
+  position: relative;
+  left: 1cm;
+  height: auto;
+}
+
+.learn-about .cards h3 {
+    color: #48bb78;
+    font-size: 21px;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  overflow-y: hidden;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: -2cm;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 25%; /* Adjust the width based on your layout */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  /* margin-bottom: 90px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-body h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 0.9em;
+  color: #333;
+}
+
+.testing {
+  display: flex;
+  position: relative;
+  background-color: #4a5568;
+  padding: 20px;
+  height: 8cm;
+}
+
+.testing p,
+h2 {
+  color: white;
+}
+
+a.btn {
+  background-color: green;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+}
+
+.stories {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 60px 0;
+  align-items: left;
+}
+
+.stories h2,
+.stories a {
+  color: #5a67d8;
+}
+
+.stories h2 {
+    margin-right: 16.5cm;
+}
+
+.stories .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.stories article {
+  display: flex;
+  flex-direction: row; /* Arrange articles in a row */
+  margin-bottom: 20px;
+  overflow: hidden; /* Hide overflow content */
+  width: 70%;
+}
+
+.stories article img {
+  height: 210px;
+  width: 210px;
+  border-radius: 50%; 
+  margin: 0;
+}
+
+.article-body {
+  flex: 1;
+  padding: 20px; 
+}
+
+.stories h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stories p {
+  text-align: left;
+  line-height: 24px;
+  margin-bottom: 20px; /* Separate paragraphs */
+}
+
+.stories a {
+  display: block; /* Make the "Read this Story" link a block element */
+  text-decoration: none;
+  color: #5a67d8;
+  font-weight: bold;
+}
+
+.stories a:hover {
+  text-decoration: underline;
+}
+
+.newsletter {
+  display: flex;
+  position: relative;
+  background-color: #48bb78;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.newsletter .container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.newsletter h3 {
+  text-align: center;
+  position: relative;
+  display: flex;
+  font-size: 24px;
+}
+
+.newsletter p {
+  text-align: start;
+  margin-left: 240px;
+  margin-right: 230px; /* Create some space between the paragraph and the form */
+  margin-bottom: 20px; /* Adjust the space below the paragraph */
+}
+
+.newsletter form {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter button {
+  background-color: #5a67d8;
+  border: none;
+  padding: 17px 30px;
+  color: white;
+  border-radius: 4px;
+  margin-left: 7px; /* Add space between form and button */
+}
+
+.newsletter input {
+  width: 9cm;
+  height: 0.7cm;
+  padding: 9.9px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
