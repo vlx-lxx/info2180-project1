@@ -117,12 +117,12 @@ li a:link {
 
 .overview-hero div {
   padding: 10px;
-  padding-left: 60px;
+  padding-left: 80px;
 }
 
 .overview-hero img {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
 }
 
 .learn-about {
@@ -137,7 +137,7 @@ li a:link {
   margin-bottom: 575px;
   white-space: nowrap;
   position: relative;
-  left: 1cm;
+  left: 2.19cm;
   height: auto;
 }
 
